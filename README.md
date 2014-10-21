@@ -13,14 +13,15 @@
 ```
 {
   "papertrail": {
-    "destination": "logs.papertrailapp.com:[PORT]",
-      "log_files": {
-        "rails": "/srv/www/[APP_NAME]/shared/log/production.log",
-        "batch": "/srv/www/[APP_NAME]/shared/log/batch.log"
-      }
+    "remote_host": "logs2.papertrailapp.com",
+    "remote_port": "[PORT]",
+    "watch_files": {
+      "rails": "/srv/www/[APP_NAME]/shared/log/production.log",
+      "batch": "/srv/www/[APP_NAME]/shared/log/batch.log"
+    }
   }
 }
 ```
 
 - Custom Chef Recipe
-https://github.com/otelic/opsworks_delayed_job#opsworks-set-up
+https://github.com/otelic/papertrail-cookbook#attributes
