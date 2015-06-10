@@ -16,8 +16,8 @@
     "remote_host": "logs2.papertrailapp.com",
     "remote_port": "[PORT]",
     "watch_files": {
-      "rails": "/srv/www/[APP_NAME]/shared/log/production.log",
-      "batch": "/srv/www/[APP_NAME]/shared/log/batch.log"
+      "/srv/www/[APP_NAME]/shared/log/production.log" : "rails" ,
+      "/srv/www/[APP_NAME]/shared/log/batch.log" : "batch"
     }
   }
 }
