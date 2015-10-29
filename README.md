@@ -3,7 +3,7 @@
 ```
 }
   "delayed_job": {
-    "pool_size": 1, "path_to_script": "bin"
+    "pool_size": 1
   }
 }
 ```
