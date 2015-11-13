@@ -3,3 +3,4 @@ source "https://supermarket.getchef.com"
 
 cookbook 'opsworks_delayed_job', git: 'https://github.com/SonicGarden/opsworks_delayed_job.git'
 cookbook 'papertrail', git: 'https://github.com/otelic/papertrail-cookbook.git'
+cookbook 'le_chef', git: 'https://github.com/logentries/le_chef.git'
