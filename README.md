@@ -12,12 +12,12 @@
 - Custom JSON設定
 ```
 {
-  "papertrail": {
-    "remote_host": "logs2.papertrailapp.com",
-    "remote_port": "[PORT]",
-    "watch_files": {
-      "/srv/www/[APP_NAME]/shared/log/production.log" : "rails" ,
-      "/srv/www/[APP_NAME]/shared/log/batch.log" : "batch"
+  "remote_syslog2": {
+    "files": ["/srv/www/rails/current/log/production.log", "/srv/www/rails/current/log/batch.log"],
+    "exclude_patterns": [],
+    "destination": {
+      "host": "logs.papertrailapp.com",
+      "port": "12345"
     }
   }
 }
